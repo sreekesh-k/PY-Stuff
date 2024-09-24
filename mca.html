@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCA | ADMISSION</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+            height: 88svh;
+            font-family: sans-serif;
+        }
+        h1{
+            color: green;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: .725rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>REGISTER -  MCA admission 2024</h1>
+    <form action="mcaHandler.py" method="get">
+        <input type="email" id="email" name="email" placeholder="email">
+        <input type="text" id="username" name="username" placeholder="username">
+        <input type="password" id="password" name="password" placeholder="password">
+        <input type="submit" value="register">
+    </form>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operations</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+            height: 88svh;
+            font-family: sans-serif;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10rem;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: .725rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CRUD OPERATIONS
+        <hr>
+    </h1>
+
+    <div class="content">
+        <div>
+            <h2>Create</h2>
+            <form action="crud.py" method="post">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit" name="action" value="Create">
+            </form>
+        </div>
+
+        <div>
+            <h2>Read</h2>
+            <form action="crud.py" method="post">
+                <input type="text" name="username" placeholder="Username to display" required>
+                <input type="submit" name="action" value="Read">
+            </form>
+        </div>
+
+        <div>
+            <h2>Update</h2>
+            <form action="crud.py" method="post">
+                <input type="text" name="old_username" placeholder="Current Username" required>
+                <input type="text" name="new_username" placeholder="New Username" required>
+                <input type="password" name="new_password" placeholder="New Password" required>
+                <input type="submit" name="action" value="Update">
+            </form>
+        </div>
+        <div>
+            <h2>Delete</h2>
+            <form action="crud.py" method="post">
+                <input type="text" name="username" placeholder="Username to delete" required>
+                <input type="submit" name="action" value="Delete">
+            </form>
+        </div>
+
+    </div>
+    <div id="result"></div>
+</body>
+
+</html>
